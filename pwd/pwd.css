@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2? family=Poppins:wght@600&display=swap');
+html{
+    font-family: Poppins,sans-serif;
+}
+body{
+    background-color: #002c3e;
+}
+/*hamburger menu*/
+#menu__toggle {
+    opacity: 0;
+  }
+  
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 24px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #f7444e;
+    transition-duration: .50s;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color:#f7f8f3;
+    transition-duration: .25s;
+  }
+  
+  .menu__item {
+    display: block;
+    padding: 20px 0px 0px 26px ;
+    color: #002c3e;
+    font-family: Poppins,sans-serif;
+    font-weight: thin;
+    font-size: large;
+    text-decoration: none;
+    transition-duration: .25s;
+  }
+  .menu__item:hover {
+    color: #f7444e;
+  }
+  .menu_head{
+    display: block;
+    padding: 30px 0px 0px 24px;
+    color: #002c3e;
+    font-family: Poppins,sans-serif;
+    font-weight: bold;
+    font-size:1.5em;
+    text-decoration: none;
+    transition-duration: .25s;
+  }
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+.v5_100 {
+  width: 100%;
+  height: 1640px;
+  background: rgba(3,23,12,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v5_116 {
+  width: 100%;
+  height: 749px;
+  background: url("pwd.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v5_102 {
+  width: 601px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 401px;
+  left: 619px;
+  font-family: Raleway;
+  font-weight: Medium;
+  font-size: 100px;
+  opacity: 1;
+  text-align: center;
+}
+.v5_103 {
+  width: 494px;
+  height: 462px;
+  opacity: 1;
+  position: absolute;
+  top: 950px;
+  left: 80px;
+  overflow: hidden;
+  background-color:white;
+    padding: 0rem;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.v5_104 {
+  width: 370px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 975px;
+  left: 142px;
+  font-family: Raleway;
+  font-weight: Medium;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+}
+.v5_105 {
+  width: 487px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 992px;
+  left: 690px;
+  font-family: Poppins;
+  font-weight: Regular;
+  font-size: 22px;
+  opacity: 1;
+  text-align: center;
+}
+.form
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 2rem;
+    column-gap: 1rem;
+    justify-content: center;
+    align-self: center;
+	font-size:19px;
+}
+.title
+{
+    margin: 0;
+    text-align: center;
+	font-size: 25px;
+	text-shadow: 2px 2px #000000;
+}
+
+.character-amount-container
+{
+
+   display: solid;
+    align-items: center;
+}
+.number-input
+{
+    width: 3rem;
+}
+
+.checkbox
+{
+	color:black;
+}
+.password-display
+{
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    border: 1px solid #14992A;
+    height: 3rem;
+    width: 22rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-break: break-all;
+	font-size:20px;
+}
+button
+{
+    grid-column: span 2;
+    background-color: transparent;
+    border: 2px solid #000000;
+    color: black;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    border-radius: 1rem;
+	font-weight:bold;
+}
+button:hover
+{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+label
+{
+	font-weight:bold;
+}
+
+
