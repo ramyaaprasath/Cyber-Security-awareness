@@ -42,21 +42,24 @@ body {
   width: 250px;
   color: rgba(0,0,0,1);
   position: absolute;
-  top: 478px;
+  top: 475px;
   justify-content: center;
   align-items: center;
   font-family: Raleway;
-  font-size: 20px;
+  font-weight: bold;
+  font-size: 25px;
   opacity: 1;
   text-align: center;
 }
 .v5_48 {
-  width: 100%;
+  width: 863px;
   height: 162px;
-  font-family: Monoton;
+  font-family: Raleway;
   color: rgba(255,255,255,1);
   position: absolute;
-  top: 220px;
+  top: 250px;
+  font-family: Raleway;
+  font-weight: bolder;
   font-size: 83px;
   opacity: 1;
   text-align: center;
@@ -71,7 +74,7 @@ body {
   top: 420px;
   left: 10%;
   border: 5px solid rgba(247,68,78,1);
-  transform: rotate(75deg)
+  transform: rotate(45deg)
 }
 .v5_50 {
   width: 50px;
@@ -82,7 +85,7 @@ body {
   position: absolute;
   top: 420px;
   left: 10%;
-  transform: rotate(355deg);
+  transform: rotate(315deg);
   border: 5px solid rgba(247,68,78,1);
 }
 .v5_51 {
@@ -183,7 +186,7 @@ body {
 }
 .v5_63 {
   width: 100%;
-  height: 564px;
+  height: 580px;
   background: rgba(244,244,244,1);
   opacity: 1;
   position: absolute;
