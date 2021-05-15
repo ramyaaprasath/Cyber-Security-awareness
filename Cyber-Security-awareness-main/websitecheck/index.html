@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
+	<link href="./css/main.css" rel="stylesheet" />
+	<link rel="icon" type="image/icon type" href="images/logo.png" />
+	<title>Website Validation</title>
+</head>
+<body>
+	<div class="v5_109">
+		<div class="v5_110"></div>
+		<span class="v5_111">WEBSITE VALIDATION</span>
+		<div class="v5_112"></div>
+		<span class="v5_113">
+			<h5>Website Validator</h5>
+			<div class="bar html delay-html" id="html"></div>
+		<span id="demo"></span>
+		<p class="text">Enter Website URL</p>
+              <input type="text" name="url" class="input-field" id="url" size="45" placeholder="   amazon.in" />
+		<button name="submit" class="submit btn" onclick="check();">Check</button>
+		<script type="text/javascript">
+			var x=document.querySelector(':root')
+			var html=document.querySelector('.html')
+			function check(){
+				var url = document.getElementById('url').value
+				var length = url.length
+				if (length === 0)
+				document.getElementById('demo').innerHTML = ""
+				else{
+					html.style.visibility='visible'
+					var lastIndex = url.lastIndexOf('.')
+					console.log(length)
+					console.log(lastIndex)
+					var spoof = length - lastIndex
+					console.log(spoof)
+					if (spoof > 4){
+					var width=Math.floor(Math.random() * 50) + 1
+					width=width+'%'
+					x.style.setProperty('--name', width)
+					document.getElementById('html').innerHTML = width
+					document.getElementById('html').title = "This website is "+ width +" safe."
+					document.getElementById('html').style.background="#f7444e";
+					}
+					else{
+						var width=Math.floor(Math.random() * 50) + 50
+					width=width+'%'
+					x.style.setProperty('--name', width)
+					document.getElementById('html').innerHTML = width
+					document.getElementById('html').title = "This website is "+ width +" safe."
+					document.getElementById('html').style.background="green";
+					}
+				}
+			}
+
+		</script>
+		</span>
+		<span class="v5_114">Website spoofing is the creation of a replica of a trusted site with the intention of misleading visitors to a phishing site. Legitimate logos, fonts, colors and functionality are used to make the spoofed site look realistic. Website spoofing attacks have become increasingly prevalent in recent years. Even unsophisticated attackers can register a domain that's very close to the domain of a trusted brand and build a site that looks identical to the brand's website. Then, using phishing emails, attackers can lure the brand's customers, partners, and others to the site and trick them into revealing sensitive information. Website spoofing is incredibly difficult to identify because the scam takes place outside of an organization's security perimeter. </span>
+	</div>
+	<div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
+        <ul class="menu__box">
+            <li class="menu_head">Creating Awareness</li>
+            <li><a class="menu__item" href="#">Home</a></li>
+            <li><a class="menu__item" href="../about/index.html">About</a></li>
+            <li class="menu_head">Features</li>
+            <li><a class="menu__item" href="../pwd/pwd.html">Password Generator</a></li>
+            <li><a class="menu__item" href="../websitecheck/index.html">Website Validator</a></li>
+            <li><a class="menu__item" href="../forum/forum.html">Support Forum</a></li>
+        </ul>
+    </div>
+    <ul class="home-social">
+            <li>
+                <a href="https://www.instagram.com/ramyaaprasath/?hl=en"><i class="im im-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+            </li>
+            <li>
+                <a href="https://github.com/ramyaaprasath"><i class="im im-github" aria-hidden="true"></i><span>Github</span></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/ramyaa-prasath-5b85a91a3/"><i class="im im-linkedin" aria-hidden="true"></i><span>Linkedin</span></a>
+            </li>
+        </ul>
+</body>
+</html>
