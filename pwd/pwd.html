@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href="https://fonts.googleapis.com/css?family=Rammetto+One&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet" />
 <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
 <link href="../logo.png" rel="shortcut icon" type="image/jpg">
 <link href="pwd.css" rel="stylesheet" />
@@ -9,36 +9,27 @@
 <title>Password Generator</title>
 </head>
 <body>
-<div class="v5_100">
-<div class="v5_116"></div>
-<span class="v5_102">PASSWORD GENERATOR</span>
-<div class="v5_103"></div>
+<div class="v5_116">
+<div class="container">
 
-<span class="v5_104">
-        <h3 class="password-display" id="passwordDisplay">Your Password is</h3>
-        <br>
-        <form class="form" id="passwordGeneratorForm">
-            <label for="characterAmountNumber">Number of Characters</label>
-            <div class="character-amount-container">
-                <input type="range" name="" value="10" id="characterAmountRange" min="8" max="50">
-                <input class="number-input" type="number" name="" value="10" id="characterAmountNumber" min="8" max="50">
-            </div>
-		
-            <label for="includeUppercase" >Include Uppercase</label>
-            <input type="checkbox" name="" id="includeUppercase">
-			
-            <label for="includeNumbers" >Include Numbers</label>
-            <input type="checkbox" name="" id="includeNumbers">
-			
-            <label for="includeSymbols" >Include Symbols</label>
-            <input type="checkbox" name="" id="includeSymbols">
-			
-            <button type="submit">Generate Password</button>
-        </form>
-</span>
-<span class="v5_105">There’s a reason that there is a password strength indication meter on many login pages.
- Having passwords that are easily recognizable or that contain basic company information can increase your chance of falling victim to an attack.
- You should be changing your passwords every couple of months.With the right password, a cyber attacker has access to a wealth of information.</span>
+  <h3 class="password-display" id="passwordDisplay">Password</h3>
+  <br>
+  <br>
+  <form class="form" id="passwordGeneratorForm">
+      <label for="characterAmountNumber">Number of Characters</label>
+      <div class="character-amount-container">
+          <input type="range" name="" value="10" id="characterAmountRange" min="8" max="50">
+          <input class="number-input" type="number" name="" value="10" id="characterAmountNumber" min="8" max="50">
+      </div>
+      <label for="includeUppercase">Include Uppercase</label>
+      <input type="checkbox" name="" id="includeUppercase">
+      <label for="includeNumbers">Include Numbers</label>
+      <input type="checkbox" name="" id="includeNumbers">
+      <label for="includeSymbols">Include Symbols</label>
+      <input type="checkbox" name="" id="includeSymbols">
+      <button type="submit">Generate Password</button>
+  </form>
+</div>
 </div>
 <div class="hamburger-menu">
             <input id="menu__toggle" type="checkbox" />
