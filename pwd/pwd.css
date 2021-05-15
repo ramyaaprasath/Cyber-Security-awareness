@@ -47,7 +47,7 @@ html{
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: #f7444e;
+  background-color: lightgreen;
   transition-duration: .50s;
 }
 .menu__btn > span::before {
@@ -107,7 +107,7 @@ body {
 }
 .v5_116 {
   width: 100%;
-  height: 640px;
+  height: 850px;
   background: url("pwd.jpg");
   background-color: #ffffff2a;
   background-position: center center;
@@ -117,6 +117,7 @@ body {
   top: 0px;
   left: 0px;
   overflow: hidden;
+  align-items: center;
 }
 /*box*/
 .container
@@ -129,9 +130,10 @@ body {
     align-items: center;
     flex-direction: column;
     width: 500px;
-    margin-left: 25rem;
-    margin-top: 2rem;
-}
+    margin-left :32rem;
+    margin-top:16rem;
+  }
+
 .form
 {
     display: grid;
@@ -141,6 +143,8 @@ body {
     justify-content: center;
     align-self: center;
 }
+
+
 .title
 {
     margin: 0;
@@ -157,14 +161,20 @@ label
 }
 .number-input
 {
-    width: 2rem;
+    width: 2.5rem;
+    border:none;
+    color:black;
+    font-weight: bold;
+     background-color: rgba(225,225,225,0.3);
+
+
 }
 .password-display
 {
     background-color: white;
     color: black;
     padding: 1rem;
-    height: 2rem;
+    height: 3rem;
     width: 22rem;
     display: flex;
     justify-content: center;
@@ -180,6 +190,12 @@ button
     cursor: pointer;
     border-radius: 1rem;
     height:2rem;
+    font-weight: bold;
     width:200px;
 
+}
+button:hover
+{
+  color:white;
+  font-weight: bold;
 }
