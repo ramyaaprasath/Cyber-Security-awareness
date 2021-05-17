@@ -1,0 +1,25 @@
+.main {
+  margin-left: 200px; 
+  font-size: 20px; 
+  padding: 10px 15px 10px 10px;
+  color: white;
+  
+  background-color:  #002c3e;
+  height :630px;
+  border-radius: 20px;
+  border:2px solid white;
+  overflow-y: scroll;
+}
+.main::-webkit-scrollbar {
+    width: 0.7em;
+}
+ 
+.main::-webkit-scrollbar-track {
+   background-color: #002c3e ;
+   border-radius: 20px;
+}
+ 
+.main::-webkit-scrollbar-thumb {
+  background-color:#f7444e ;
+  border-radius: 25px;
+}
